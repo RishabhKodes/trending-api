@@ -1,7 +1,7 @@
 {
-  "name": "gitrending",
+  "name": "trending-api",
   "version": "1.0.0",
-  "description": "to find trending repos in github",
+  "description": "to find trending stuff",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
