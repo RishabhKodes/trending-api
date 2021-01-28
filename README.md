@@ -1,2 +1,3 @@
-# autoGit
-Automating GitHub commit
+# trendingAPI
+Everything trending at one place!
+
