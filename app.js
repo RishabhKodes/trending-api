@@ -4,6 +4,11 @@ const app = express();
 const axios = require('axios');
 
 app.get('/git', function(req, res){
+  res.send("This is the Home Page");
+  console.log("home page route accessed")
+})
+
+app.get('/git', function(req, res){
   axios.get(process.env.GITHUB_URL)
   .then(function (response) {
     res.send(response.data);
@@ -43,7 +48,7 @@ app.get('/youtube', function(req, res){
   })
 })
 
-app.listen(3000, () => {
-  console.log('server started at port 3000');
+app.listen(process.env.PORT, () => {
+  console.log('server started at port '+process.env.PORT);
 });
 
