@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const axios = require('axios');
 
-app.get('/git', function(req, res){
+app.get('/', function(req, res){
   res.send("This is the Home Page");
   console.log("home page route accessed")
 })
